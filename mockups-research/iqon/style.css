@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'iqon';
+  src:
+    url('fonts/iqon.ttf?n8r44v') format('truetype'),
+    url('fonts/iqon.woff?n8r44v') format('woff'),
+    url('fonts/iqon.svg?n8r44v#iqon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="iqon-"], [class*=" iqon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iqon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iqon-logout:before {
+  content: "\e924";
+}
+.iqon-switch-platform:before {
+  content: "\e940";
+}
+.iqon-app-contacts:before {
+  content: "\e900";
+}
+.iqon-app-chat-simple:before {
+  content: "\e901";
+}
+.iqon-app-contacts-1:before {
+  content: "\e902";
+}
+.iqon-app-contacts-2:before {
+  content: "\e903";
+}
+.iqon-app-notification-1:before {
+  content: "\e904";
+}
+.iqon-app-notification:before {
+  content: "\e905";
+}
+.iqon-app-timeline:before {
+  content: "\e906";
+}
+.iqon-activation:before {
+  content: "\e907";
+}
+.iqon-auto-login:before {
+  content: "\e908";
+}
+.iqon-bar-linear-graph:before {
+  content: "\e909";
+}
+.iqon-blog:before {
+  content: "\e90a";
+}
+.iqon-calendar:before {
+  content: "\e90b";
+}
+.iqon-chat-simple:before {
+  content: "\e90c";
+}
+.iqon-chat:before {
+  content: "\e90d";
+}
+.iqon-community-management:before {
+  content: "\e90e";
+}
+.iqon-dashboard-settings:before {
+  content: "\e90f";
+}
+.iqon-dashboard:before {
+  content: "\e910";
+}
+.iqon-expert-profile:before {
+  content: "\e911";
+}
+.iqon-file-share:before {
+  content: "\e912";
+}
+.iqon-files:before {
+  content: "\e913";
+}
+.iqon-find-experts:before {
+  content: "\e914";
+}
+.iqon-games:before {
+  content: "\e915";
+}
+.iqon-group-project:before {
+  content: "\e916";
+}
+.iqon-group-settings:before {
+  content: "\e917";
+}
+.iqon-group:before {
+  content: "\e918";
+}
+.iqon-ideas:before {
+  content: "\e919";
+}
+.iqon-info:before {
+  content: "\e91a";
+}
+.iqon-intranet-1:before {
+  content: "\e91b";
+}
+.iqon-intranet:before {
+  content: "\e91c";
+}
+.iqon-kickstart-1:before {
+  content: "\e91d";
+}
+.iqon-kickstart:before {
+  content: "\e91e";
+}
+.iqon-knowledge-bank:before {
+  content: "\e91f";
+}
+.iqon-knowledge-profile-1:before {
+  content: "\e920";
+}
+.iqon-knowledge-profile:before {
+  content: "\e921";
+}
+.iqon-languages:before {
+  content: "\e922";
+}
+.iqon-locks:before {
+  content: "\e923";
+}
+.iqon-members:before {
+  content: "\e925";
+}
+.iqon-messages:before {
+  content: "\e926";
+}
+.iqon-monthly-report:before {
+  content: "\e927";
+}
+.iqon-nl-data-center:before {
+  content: "\e928";
+}
+.iqon-notification-settings:before {
+  content: "\e929";
+}
+.iqon-notification:before {
+  content: "\e92a";
+}
+.iqon-profile-card:before {
+  content: "\e92b";
+}
+.iqon-profile-stats:before {
+  content: "\e92c";
+}
+.iqon-progress-meeting:before {
+  content: "\e92d";
+}
+.iqon-q-and-a:before {
+  content: "\e92e";
+}
+.iqon-responsive:before {
+  content: "\e92f";
+}
+.iqon-secure-connection:before {
+  content: "\e930";
+}
+.iqon-secure-data:before {
+  content: "\e931";
+}
+.iqon-security:before {
+  content: "\e932";
+}
+.iqon-settings:before {
+  content: "\e933";
+}
+.iqon-share-knowledge:before {
+  content: "\e934";
+}
+.iqon-similar-knowledge:before {
+  content: "\e935";
+}
+.iqon-smart-search:before {
+  content: "\e936";
+}
+.iqon-strategic:before {
+  content: "\e937";
+}
+.iqon-summary:before {
+  content: "\e938";
+}
+.iqon-survey:before {
+  content: "\e939";
+}
+.iqon-tasks:before {
+  content: "\e93b";
+}
+.iqon-themes:before {
+  content: "\e93c";
+}
+.iqon-timeline-1:before {
+  content: "\e93d";
+}
+.iqon-timeline:before {
+  content: "\e93e";
+}
