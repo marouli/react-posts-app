@@ -12,6 +12,10 @@
   display: inline-block;
 }
 
+ul.sideNav__ul {
+  margin-top: 20px;
+}
+
 .sideNav__logo {
   width: 80%;
   margin: 20px;
@@ -26,7 +30,7 @@
 
 .sideNav__ul li a {
   font-family: 'Roboto:700', sans-serif;
-  padding:5px 15px;
+  padding:4px 15px;
   color: white;
   display: inline-block;
   text-decoration: none;

@@ -27,7 +27,7 @@ class SearchInput extends Component {
             ref={input => this.search = input}
             onChange = {this.handleInputChange}
           />
-          <span class="icon">
+          <span class="search__icon">
             <i class="fa fa-search"></i>
           </span>
         </div>
