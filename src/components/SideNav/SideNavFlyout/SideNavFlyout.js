@@ -21,9 +21,9 @@ class SideNavFlyout extends Component {
     const visibility = this.props.visibility ? "show" : "hide";
 
     return (
-      <ul id="sideNavFlyout"
+      <ul
           onClick={this.props.onClick}
-          className={visibility}>
+          className={`sideNavFlyout ${visibility}`}>
           {channelsListItems}
           {this.props.children}
       </ul>

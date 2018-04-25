@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './Notifications.css';
 
+import Icon from '../common/Icon/Icon';
+
 class Notifications extends Component {
   constructor(props) {
     super(props);
@@ -16,12 +18,8 @@ class Notifications extends Component {
 
   render() {
     return (
-        <div className="notification__container">
-          <span class="notification__icon">
-            <i class="fa fa-bell"></i>
-          </span>
-        </div>
-    )
+      <Icon faClassName="bell" />
+    );
   }
 }
 

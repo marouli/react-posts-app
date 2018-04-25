@@ -9,12 +9,23 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <SideNav/>
-        <SearchInput/>
-        <Notifications/>
-        <User/>
-      </div>
+      <React.Fragment>
+        <div className="sidebar">
+          <SideNav/>
+        </div>
+        <div className="main">
+          <header className="header">
+            <SearchInput/>
+            <div>
+              <Notifications/>
+              <User/>
+            </div>
+          </header>
+          <div className="content">
+            <p></p>
+          </div>
+        </div>
+      </React.Fragment>
     );
   }
 }

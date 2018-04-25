@@ -11,7 +11,7 @@ class SideNav extends Component {
       hover: false
     }
 
-    this.handlehover = this.handlehover.bind(this);
+    this.handleClick = this.handleClick.bind(this);
     this.toggleFlyout = this.toggleFlyout.bind(this);
   }
 
@@ -21,7 +21,7 @@ class SideNav extends Component {
     }));
   }
 
-  handlehover(e) {
+  handleClick(e) {
     this.toggleFlyout();
   }
 
