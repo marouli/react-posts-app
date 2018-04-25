@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import SideNav from "../SideNav/SideNav";
-import SearchInput from "../SearchInput/SearchInput";
-import Notifications from "../Notifications/Notifications";
-import User from "../User/User";
+import Header from "../Header/Header";
 
 class App extends Component {
 
@@ -14,15 +12,9 @@ class App extends Component {
           <SideNav/>
         </div>
         <div className="main">
-          <header className="header">
-            <SearchInput/>
-            <div>
-              <Notifications/>
-              <User/>
-            </div>
-          </header>
+          <Header/>
           <div className="content">
-            <p></p>
+            {/*<p></p>*/}
           </div>
         </div>
       </React.Fragment>

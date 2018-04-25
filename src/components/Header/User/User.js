@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import './Notifications.css';
+import './User.css';
 
-import Icon from '../common/Icon/Icon';
+import Icon from '../../common/Icon/Icon';
 
-class Notifications extends Component {
+class User extends Component {
   constructor(props) {
     super(props);
 
@@ -18,9 +18,9 @@ class Notifications extends Component {
 
   render() {
     return (
-      <Icon faClassName="bell" />
+      <Icon faClassName="user" />
     );
   }
 }
 
-export default Notifications;
+export default User;
