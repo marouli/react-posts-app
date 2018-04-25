@@ -1,0 +1,13 @@
+section.post {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #DDDDDD;
+}
+
+p.post__content {
+  padding-left: 10px;
+}

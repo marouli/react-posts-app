@@ -7,8 +7,6 @@
 
 .sideNav {
   background-color: #cd2428;
-  /*height: 100vh;*/
-  /*display: inline-block;*/
   height: 100%;
 }
 
@@ -17,8 +15,8 @@ ul.sideNav__ul {
 }
 
 .sideNav__logo {
-  width: 80%;
-  margin: 20px;
+  width: 75%;
+  margin: 30px;
 }
 
 .sideNav__ul li {

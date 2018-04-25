@@ -16,18 +16,9 @@ body {
 }
 
 .sidebar {
-  width: 22%;
+  width: 18%;
 }
 
 .main {
   flex: 1;
 }
-
-/*.header {*/
-  /*display: flex;*/
-  /*flex-direction: row;*/
-  /*justify-content: space-between;*/
-  /*border-bottom: 1px solid #BBBBBB;*/
-  /*padding-bottom: 5px;*/
-  /*margin: 10px 25px;*/
-/*}*/

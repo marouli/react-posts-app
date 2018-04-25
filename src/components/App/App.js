@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import SideNav from "../SideNav/SideNav";
-import Header from "../Header/Header";
+import SideNav from '../SideNav/SideNav';
+import Header from '../Header/Header';
+import PostsBoard from '../PostsBoard/PostsBoard';
 
 class App extends Component {
 
@@ -14,7 +15,7 @@ class App extends Component {
         <div className="main">
           <Header/>
           <div className="content">
-            {/*<p></p>*/}
+            <PostsBoard/>
           </div>
         </div>
       </React.Fragment>
