@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './SideNavFlyout.css';
 
-class SideNavFlyout extends Component {
+function SideNavFlyout(props) {
   /*async componentDidMount() {
     const response = await fetch("/api/sidenav/items?category=Channels");
     const items = await response.json();
@@ -11,24 +11,22 @@ class SideNavFlyout extends Component {
       items
     });
   }*/
+  const channelsList = ['Stamkracht', 'Qollap', 'Brandfighters', 'Beebox', 'Dasboard'];
+  const portalList = ['General', 'Administratie', 'Development & Productie', 'Service'];
+  const channelsListItems = channelsList.map((item, i) => <li key={i}>{item}</li>);
+  const portalListItems = portalList.map((item, i) => <li key={i}>{item}</li>);
 
-  render() {
-    const channelsList = ['Stamkracht', 'Qollap', 'Brandfighters', 'Beebox', 'Dasboard'];
-    const portalList = ['General', 'Administratie', 'Development & Productie', 'Service'];
-    const channelsListItems = channelsList.map((item, i) => <li key={i}>{item}</li>);
-    const portalListItems = portalList.map((item, i) => <li key={i}>{item}</li>);
+  const visibility = props.visibility ? "show" : "hide";
 
-    const visibility = this.props.visibility ? "show" : "hide";
-
-    return (
-      <ul
-          onClick={this.props.onClick}
-          className={`sideNavFlyout ${visibility}`}>
-          {channelsListItems}
-          {this.props.children}
-      </ul>
-    );
+  return (
+    <ul
+      onClick={props.onClick}
+      className={`sideNavFlyout ${visibility}`}>
+      {channelsListItems}
+      {portalListItems}
+      {props.children}
+    </ul>
+  );
   }
-}
 
 export default SideNavFlyout;

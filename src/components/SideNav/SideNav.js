@@ -34,7 +34,7 @@ class SideNav extends Component {
             <li><a href="#">Activitystream</a></li>
             <li><a onClick={this.handleClick} href="#">Channels ></a>
               <SideNavFlyout
-                onClick={this.handleClick}
+                // onClick={this.handleClick}
                 visibility={this.state.isFlyoutVisible}/>
             </li>
             <li><a href="#">Colleagues</a></li>
