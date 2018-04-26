@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './SideNavFlyout.css';
 
 function SideNavFlyout(props) {
@@ -11,19 +11,17 @@ function SideNavFlyout(props) {
       items
     });
   }*/
-  const channelsList = ['Stamkracht', 'Qollap', 'Brandfighters', 'Beebox', 'Dasboard'];
-  const portalList = ['General', 'Administratie', 'Development & Productie', 'Service'];
-  const channelsListItems = channelsList.map((item, i) => <li key={i}>{item}</li>);
-  const portalListItems = portalList.map((item, i) => <li key={i}>{item}</li>);
+  // const channelsList = ['Stamkracht', 'Qollap', 'Brandfighters', 'Beebox', 'Dasboard'];
+  // const portalList = ['General', 'Administratie', 'Development & Productie', 'Service'];
+  // const channelsListItems = channelsList.map((item, i) => <li key={i}>{item}</li>);
+  // const portalListItems = portalList.map((item, i) => <li key={i}>{item}</li>);
 
   const visibility = props.visibility ? "show" : "hide";
-
+  console.log('props:', props);
   return (
     <ul
       onClick={props.onClick}
       className={`sideNavFlyout ${visibility}`}>
-      {channelsListItems}
-      {portalListItems}
       {props.children}
     </ul>
   );

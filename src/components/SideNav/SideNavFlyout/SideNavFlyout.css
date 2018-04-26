@@ -1,12 +1,12 @@
 ul.sideNavFlyout {
   position: absolute;
   width: 150px;
-  height: 75vh;
+  height: 50vh;
   background-color: #DA5B5E;
   transition: transform .3s cubic-bezier(0, .52, 0, 1);
   left: 120px;
   top: 0;
-  padding: 10px 0 0 10px;
+  padding: 10px 0 10px 10px;
   z-index: 2;
 }
 
@@ -27,7 +27,8 @@ ul.sideNavFlyout li {
 }
 
 ul.sideNavFlyout li:hover {
-  color: darkgray;
+  background-color: #DA5B5E;
+  color: #BB2428;
   cursor: default;
 }
 
