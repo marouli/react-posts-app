@@ -8,6 +8,62 @@ section.post {
   box-shadow: 1px 1px 3px #DDDDDD;
 }
 
+header.post__header {
+  border-bottom: 1px solid #BBBBBB;
+  margin: 5px 25px;
+}
+
+span.author__avatar, h5.author__fullname, h6.author__jobTitle, time.post--date {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+span.author__avatar {
+  height: 30px;
+  width: 30px;
+  background-color: #DDDDDD;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+h6.author__jobTitle, time.post--date {
+  color: #888888;
+}
+
+time.post--date {
+  font-size: 12px;
+}
+
+img.post__content_img {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin-bottom: 10px;
+}
+
+h5.post__content__title {
+  margin-bottom: 10px;
+}
+
 p.post__content {
-  padding-left: 10px;
+  margin: 0 25px 10px 0;
+  font-size: smaller;
+}
+
+form {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+form input.post__comment {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px 50px 5px 5px;
+  color: #888888;
+  border-radius: 3px;
+}
+
+section.post {
+  padding-bottom: 15px;
 }

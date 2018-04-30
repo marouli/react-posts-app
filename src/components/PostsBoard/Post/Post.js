@@ -49,7 +49,22 @@ class Post extends Component {
 
     return (
       <section className="post">
-        <p className="post__content">bla bla bla bla bla...</p>
+        <header className="post__header">
+          <span className="author__avatar"></span>
+          <h5 className="author__fullname">Alex Olieman</h5>
+          <h6 className="author__jobTitle">R&D Engineer at Qollap |</h6>
+          <time className="post--date">{new Date().toJSON().slice(0,10)}</time>
+        </header>
+        <main>
+          <img src='./img/bfeatures.png' className="post__content_img"></img>
+          <h5 className="post__content__title">Hey, why don't we use qollap more?</h5>
+          <p className="post__content">You know, for teamwork.Or just to share what this submarine captain learned about self-organizing teams:</p>
+          <form action="" method="post">
+            <input className="post__comment" type="text" value="Write a comment..."/>
+            <input type="submit" value="Comment"/>
+            <button type="button">Like</button>
+          </form>
+        </main>
       </section>
     )
   }
