@@ -6,32 +6,33 @@ class SearchInput extends Component {
     super(props);
 
     this.state = {
-      query: ''
-    }
+      filterText: ''
+    };
+
+    this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
   }
 
-  handleInputChange() {
+  handleFilterTextChange(filterText) {
     this.setState({
-      query: this.search.value
+      filterText: filterText
     })
   }
 
   render() {
     return (
-      <form className="searchInput__box">
+      <form>
         <div className="searchInput__container">
           <input
+            className="searchInput__input"
             type="search"
-            id="search"
-            placeholder='Search...'
-            ref={input => this.search = input}
-            onChange = {this.handleInputChange}
+            placeholder="Search..."
+            value={this.props.filterText}
+            onChange={this.handleFilterTextChange}
           />
           <span className="search__icon">
             <i className="fa fa-search"></i>
           </span>
         </div>
-        <p>{this.state.query}</p>
       </form>
     )
   }

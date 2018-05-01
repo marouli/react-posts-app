@@ -2,6 +2,7 @@ section.post {
   width: 80%;
   margin: auto;
   margin-top: 40px;
+  padding: 0 10px 20px 10px;
   background-color: #FFFFFF;
   border: 1px solid #DDDDDD;
   border-radius: 5px;
@@ -35,11 +36,10 @@ time.post--date {
   font-size: 12px;
 }
 
-img.post__content_img {
+img.post__content__img {
   width: 30%;
   display: inline-block;
   float: left;
-  margin-bottom: 10px;
 }
 
 h5.post__content__title {
@@ -57,13 +57,12 @@ form {
 }
 
 form input.post__comment {
-  margin-left: 10px;
   margin-right: 10px;
-  padding: 5px 50px 5px 5px;
+  padding-right: 50px;
   color: #888888;
   border-radius: 3px;
 }
 
-section.post {
-  padding-bottom: 15px;
+form input.submit__comment {
+  margin-right: 10px;
 }

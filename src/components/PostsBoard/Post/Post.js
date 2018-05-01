@@ -56,13 +56,13 @@ class Post extends Component {
           <time className="post--date">{new Date().toJSON().slice(0,10)}</time>
         </header>
         <main>
-          <img src='./img/bfeatures.png' className="post__content_img"></img>
+          <img src='./img/bfeatures.png' className="post__content__img"></img>
           <h5 className="post__content__title">Hey, why don't we use qollap more?</h5>
           <p className="post__content">You know, for teamwork.Or just to share what this submarine captain learned about self-organizing teams:</p>
           <form action="" method="post">
             <input className="post__comment" type="text" value="Write a comment..."/>
-            <input type="submit" value="Comment"/>
-            <button type="button">Like</button>
+            <input className="submit__comment" type="submit" value="Comment"/>
+            <button className="like__comment"type="button">Like</button>
           </form>
         </main>
       </section>
