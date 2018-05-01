@@ -9,12 +9,12 @@ class SearchInput extends Component {
       filterText: ''
     };
 
-    this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
-  handleFilterTextChange(filterText) {
+  handleChange(e) {
     this.setState({
-      filterText: filterText
+      filterText: e.target.value
     })
   }
 
@@ -26,8 +26,8 @@ class SearchInput extends Component {
             className="searchInput__input"
             type="search"
             placeholder="Search..."
-            value={this.props.filterText}
-            onChange={this.handleFilterTextChange}
+            value={this.state.filterText}
+            onChange={this.handleChange}
           />
           <span className="search__icon">
             <i className="fa fa-search"></i>
