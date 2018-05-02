@@ -28,11 +28,11 @@ span.author__avatar {
   margin-left: 20px;
 }
 
-h6.author__jobTitle, time.post--date {
+h6.author__jobTitle, time.post__date {
   color: #888888;
 }
 
-time.post--date {
+time.post__date {
   font-size: 12px;
 }
 
@@ -42,7 +42,7 @@ img.post__content__img {
   float: left;
 }
 
-h5.post__content__title {
+h5.post__title {
   margin-bottom: 10px;
 }
 
