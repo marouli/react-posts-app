@@ -13,15 +13,12 @@ class Post extends Component {
     };
   }
 
-//   post.map((post) => {
-//     return
-// }
-
   render() {
-    this.state.data.map((post, i) => {
-      return <section className="post">
+    return (
+      this.state.data.map((post, i) => {
+        return <section className="post">
           <header className="post__header">
-            <span className="author__avatar" alt={post.avatarAlt}>{post.avatarUrl}</span>
+            <span className="author__avatar" alt={post.avatarAlt}></span>
             <h5 className="author__fullname">{post.authorName}</h5>
             <h6 className="author__jobTitle">{post.authorJobTitle} |</h6>
             <time className="post__date">{post.postDate}</time>
@@ -37,7 +34,8 @@ class Post extends Component {
             </form>
           </main>
         </section>
-    })
+      })
+    )
   }
 }
 

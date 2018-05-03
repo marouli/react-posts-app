@@ -1,8 +1,18 @@
-header.header {
+.header__container--fixed {
+  position: fixed;
+  margin: auto;
+  margin-left: 10px;
+  width: 80%;
+  height: 80px;
+  background: #F9F9F9;
+  border-bottom: 1px solid #BBBBBB;
+  flex: auto;
+  z-index: 1;
+}
+
+.header__content--flex {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px solid #BBBBBB;
-  padding-bottom: 5px;
-  margin: 10px 25px;
 }

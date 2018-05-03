@@ -6,7 +6,7 @@ html, body, #root {
 }
 
 body {
-  overflow: auto;
+  overflow: hidden;
   background-color: #F9F9F9;
 }
 
@@ -21,4 +21,5 @@ body {
 
 .main {
   flex: 1;
+  overflow-y: auto;
 }

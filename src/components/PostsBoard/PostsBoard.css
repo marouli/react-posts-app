@@ -1,6 +1,18 @@
-/*section.posts__container {*/
-  /*width: 90%;*/
-  /*height: 80vh;*/
+.posts__container--scrolling {
+  width: 100%;
+  height: 100%;
   /*background-color: #EAEAEA;*/
-  /*margin: 0 auto;*/
+  margin: 0 auto;
+  margin-top: 8%;
+  padding: 1px 0 1px 0;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  position: relative;/* need this to position inner content */
+  overflow-y: auto;
+}
+
+/*.posts--scrolled {*/
+  /*display: block;*/
+  /*width: 100%;*/
 /*}*/
