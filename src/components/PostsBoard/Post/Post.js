@@ -8,14 +8,13 @@ class Post extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: post,
-      comments: []
+      data: post
     };
   }
 
   render() {
     return (
-      this.state.data.map((post, i) => {
+      this.state.data.map((post) => {
         return <section className="post">
           <header className="post__header">
             <span className="author__avatar" alt={post.avatarAlt}></span>
