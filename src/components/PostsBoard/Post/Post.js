@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import CommentBox from './Comment/CommentBox';
 import './Post.css';
 
 import post from '../../../data/post.json';
@@ -18,7 +19,7 @@ class Post extends Component {
         return <section className="post">
           <header className="post__header">
             <span className="author__avatar" alt={post.avatarAlt}></span>
-            <h5 className="author__fullname">{post.authorName}</h5>
+            <h5 className="author__name">{post.authorName}</h5>
             <h6 className="author__jobTitle">{post.authorJobTitle} |</h6>
             <time className="post__date">{post.postDate}</time>
           </header>
@@ -26,15 +27,16 @@ class Post extends Component {
             <img src='./img/bfeatures.png' className="post__content__img"></img>
             <h5 className="post__title">{post.postTitle}</h5>
             <p className="post__content">{post.postContent}</p>
-            <form action="" method="post">
-              <input className="post__comment" type="text" value="Write a comment..."/>
-              <input className="submit__comment" type="submit" value="Comment"/>
-              <button className="like__comment" type="button">Like</button>
-            </form>
+            {/*<form action="" method="post">*/}
+              {/*<input className="post__comment" type="text" value="Write a comment..."/>*/}
+              {/*<input className="submit__comment" type="submit" value="Comment"/>*/}
+              {/*<button className="like__comment" type="button">Like</button>*/}
+            {/*</form>*/}
+            <CommentBox/>
           </main>
         </section>
       })
-    )
+    );
   }
 }
 
