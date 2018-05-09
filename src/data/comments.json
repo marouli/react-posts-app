@@ -1,4 +1,4 @@
 [
-  {"id": 1, "avatarUrl": "./img/emil-crop.jpg", "avatarAlt": "EDV", "authorName": "Emil De Valk", "commentText": "Interesting video. Certainly worth to take a look at. ", "commentDate": "4 weeks ago"},
-  {"id": 2, "avatarUrl": "", "avatarAlt": "AO", "authorName": "Alex Olieman", "commentText": "I'm not sure if it matters for us, but DSE should play well with Azure.", "commentDate": "3 weeks, 2 days ago"}
+  {"postId": 3, "id": 1, "avatarUrl": "./img/emil-crop.jpg", "authorName": "Emil De Valk", "commentText": "Interesting video. Certainly worth to take a look at. ", "commentDate": "4 weeks ago"},
+  {"postId": 4, "id": 2, "avatarUrl": "./img/emil-crop.jpg", "authorName": "Alex Olieman", "commentText": "I'm not sure if it matters for us, but DSE should play well with Azure.", "commentDate": "3 weeks, 2 days ago"}
 ]

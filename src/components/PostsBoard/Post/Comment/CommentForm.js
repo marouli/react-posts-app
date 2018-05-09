@@ -4,61 +4,37 @@ class CommentForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      newCommentText: ""
     };
   }
 
+  handleSubmit(e) {
+    e.preventDefault();
+    let authorVal = e.target[0].value.trim();
+    let textVal = e.target[1].value.trim();
+    if (!textVal || !authorVal) {
+      return;
+    }
+
+    this.props.onCommentSubmit({author: authorVal, text: textVal});
+    e.target[0].value = '';
+    e.target[1].value = '';
+    return;
+  }
+
   render() {
-    return (
-      <form className="comment__form" onSubmit={this._handleSubmit.bind(this)}>
-        <input
-          className="comment"
-          type="text"
-          placeholder="Write a comment..."
-          value={this.state.newCommentText}
-          onChange={e => this._handleChange(e)}
-          onKeyPress={e => this._handleKey(e)} />
-        <button className="submit__comment" type="submit">Post comment</button>
-        <button className="like__comment" type="button">Like</button>
+    return(
+      <form className="comment-form form-group" onSubmit={(e) => this.handleSubmit(e)}>
+        <div className="input-group">
+          <span className="input-group-addon">Name</span>
+          <input type="text" placeholder="Your name" className="form-control" />
+        </div>
+        <div className="input-group">
+          <span className="input-group-addon">Comment</span>
+          <input type="text" placeholder="Say something..." className="form-control" />
+        </div>
+        <input type="submit" value="Post" className="btn btn-primary" />
       </form>
     );
-  }
-
-  _handleSubmit(e) {
-    e.preventDefault();
-
-    this.props.addComment(this._author.value, this._body.value);
-
-    this._author.value = '';
-    this._body.value = '';
-
-    // // empty messages not allowed
-    // if (this.state.newCommentText === "")
-    //   return false;
-    //
-    // //lets the parent CommentList know about the new comment
-    // this.props.onNewComment(this.state.newCommentText);
-    //
-    // //clear the comment box
-    // this.setState(oldState => ({
-    //   newCommentText: ""
-    // }));
-    //
-    // return true;
-  }
-
-  _handleChange(e) {
-    const newComment = e.target.value;
-
-    this.setState(oldState => ({
-      newCommentText: newComment
-    }))
-  }
-
-  _handleKey(e) {
-    //charCode 13 is ENTER
-    if (e.which === 13)
-      this._handleSubmit(e);
   }
 }
 
