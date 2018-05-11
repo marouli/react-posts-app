@@ -1,45 +1,28 @@
 import React, {Component} from 'react';
 
-// class Comment extends Component {
-//   constructor(props) {
-//     super(props);
-//     // set up the initial state
-//     // this.state = {
-//     //   data: comments
-//     // }
-//   }
-//
-//   render() {
-//     return (
-//       <div className="comment__new">
-//         <div className="author__info">
-//           <img className="author__avatar"
-//                src={this.props.avatarUrl}
-//                alt={`${this.props.author}'s picture`} />
-//           <div className="author__name">
-//             {this.props.author}
-//           </div>
-//         </div>
-//         <div className="comment__body">
-//           {this.props.body}
-//         </div>
-//         <div className="comment__date">
-//           {this.props.date}
-//         </div>
-//       </div>
-//     );
-//   }
-// }
-
 class Comment extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      author: {}
+    }
   }
+
+  componentWillMount() {
+    fetch(`http://localhost:3004/users/${this.props.data.authorId}`)
+      .then(response => response.json())
+      .then(data => this.setState({ author: data }));
+  }
+
   render() {
+    let author = this.state.author;
+    let data = this.props.data;
     return (
       <div className="comment">
-        <h2 className="author">{this.props.author}</h2>
-        {this.props.text}
+        {/*<span className="author__avatar" src={author.avatarUrl}></span>*/}
+        <h2 className="author__name">{author.name}</h2>
+        <p className="comment__content">{data.content}</p>
       </div>
     );
   }

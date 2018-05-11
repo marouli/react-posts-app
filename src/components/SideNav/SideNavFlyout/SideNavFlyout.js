@@ -17,7 +17,6 @@ function SideNavFlyout(props) {
   // const portalListItems = portalList.map((item, i) => <li key={i}>{item}</li>);
 
   const visibility = props.visibility ? "show" : "hide";
-  console.log('props:', props);
   return (
     <ul
       onClick={props.onClick}
