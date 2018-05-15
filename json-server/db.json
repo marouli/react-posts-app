@@ -1,0 +1,85 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "avatarUrl": "./img/emil-crop.jpg",
+      "avatarAlt": "EDV",
+      "name": "Emil De Valk",
+      "jobTitle": "Technisch adviseur at Qollap"
+    },
+    {
+      "id": 2,
+      "avatarUrl": "https://media.platform.co.nl/media/profiles/images/201611/alex-kleur1-180px.jpg.240x240_q85_crop.jpg",
+      "avatarAlt": "AO",
+      "name": "Alex Olieman",
+      "jobTitle": "R&D Engineer at Qollap"
+    },
+    {
+      "id": 3,
+      "avatarUrl": "https://media.platform.co.nl/media/profiles/images/201707/UCMexyEt_400x400.jpeg.240x240_q85_crop.jpg",
+      "avatarAlt": "RO",
+      "name": "Roel Obdam",
+      "jobTitle": "❤❤❤ at SK"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "authorId": 1,
+      "title": "Colorfull shirts",
+      "content": "Check out these gorgeous mofo's!",
+      "date": "28 February, 2018"
+    },
+    {
+      "id": 2,
+      "authorId": 2,
+      "title": "Hey, why don't we use qollap more?",
+      "content": "You know, for teamwork.Or just to share what this submarine captain learned about self-organizing teams:",
+      "date": "11 March, 2018"
+    },
+    {
+      "id": 3,
+      "authorId": 3,
+      "title": "test",
+      "content": "On 20 February 2018 from 00:00 hour until 21 February 2018 at 00:00 o’clock. Are you joining?",
+      "date": "20 February, 2018"
+    },
+    {
+      "id": 4,
+      "authorId": 1,
+      "title": "Slack vs Whatsapp",
+      "content": "Why don't cats meow in Paris? Because they chat!",
+      "date": "30 November, 2016"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 3,
+      "authorId": 1,
+      "content": "Interesting video. Certainly worth to take a look at. ",
+      "date": "4 weeks ago"
+    },
+    {
+      "id": 2,
+      "postId": 1,
+      "authorId": 2,
+      "content": "I'm not sure if it matters for us, but DSE should play well with Azure.",
+      "date": "3 weeks, 2 days ago"
+    },
+    {
+      "id": 3,
+      "postId": 2,
+      "authorId": 3,
+      "content": "I'm not sure if it matters for us, but DSE should play well with Azure.",
+      "date": "3 weeks, 2 days ago"
+    },
+    {
+      "postId": 3,
+      "authorId": 2,
+      "content": "This is a testing comment",
+      "date": "now",
+      "id": 4
+    }
+  ]
+}

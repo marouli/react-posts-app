@@ -6,18 +6,32 @@ class PostsBoard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      posts: []
+      posts: [],
+      users: []
     }
   }
 
-  componentWillMount() {
-    fetch('http://localhost:3004/posts/')
+  componentDidMount() {
+    fetch('http://localhost:3004/posts')
       .then(response => response.json())
       .then(data => this.setState({ posts: data }));
+
+    fetch('http://localhost:3004/users')
+      .then(response => response.json())
+      .then(data => this.setState({ users: data }));
   }
+
+  // getUsers() {
+  //   fetch('http://localhost:3004/users')
+  //     .then(response => response.json())
+  //     .then(data => this.setState({ users: data }));
+  // }
 
   render() {
     let posts = this.state.posts;
+    console.log(posts);
+    let users = this.state.users;
+    console.log(users);
     return (
       <section className="posts__container--scrolling">
         <div className="posts--scrolled">
