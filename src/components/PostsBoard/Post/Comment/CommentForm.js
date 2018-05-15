@@ -33,7 +33,7 @@ class CommentForm extends Component {
   render() {
     const data = this.state.newComment;
     return(
-      <form name="commentForm" id="commentForm" className="comment__form" onSubmit={this.props.onSubmit}>
+      <form name="commentForm" id="commentForm" className="comment__form" onSubmit={this.handleSubmit}>
           <input type="text" placeholder="Comment here..." id="content" name="content"/>
           <input type="hidden" id="postId" name="postId" value="1"/>
           <input type="hidden" id="authorId" name="authorId" value="1"/>

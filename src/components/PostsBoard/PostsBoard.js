@@ -7,7 +7,7 @@ class PostsBoard extends Component {
     super(props);
     this.state = {
       posts: [],
-      users: []
+      // users: []
     }
   }
 
@@ -15,10 +15,6 @@ class PostsBoard extends Component {
     fetch('http://localhost:3004/posts')
       .then(response => response.json())
       .then(data => this.setState({ posts: data }));
-
-    fetch('http://localhost:3004/users')
-      .then(response => response.json())
-      .then(data => this.setState({ users: data }));
   }
 
   // getUsers() {
@@ -30,8 +26,8 @@ class PostsBoard extends Component {
   render() {
     let posts = this.state.posts;
     console.log(posts);
-    let users = this.state.users;
-    console.log(users);
+    // let users = this.state.users;
+    // console.log(users);
     return (
       <section className="posts__container--scrolling">
         <div className="posts--scrolled">
