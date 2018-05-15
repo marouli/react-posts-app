@@ -17,7 +17,6 @@ class Post extends Component {
       .then(data => this.setState({ author: data }));
   }
 
-
   render() {
     let author = this.state.author;
     let data = this.props.data;

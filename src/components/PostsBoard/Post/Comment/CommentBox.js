@@ -10,18 +10,20 @@ class CommentBox extends Component {
     this.state = {
       comments: []
     };
+
+    this.handleCommentSubmit = this.handleCommentSubmit.bind(this);
   }
 
-  // handleCommentSubmit(comment) {
-  //   this.state.comments.push(comment);
-  //   const comments = this.state.comments;
-  //   const newComments = comments.concat([comment]);
-  //   this.setState((oldState, props) => {
-  //     return {
-  //       comments: newComments
-  //     };
-  //   });
-  // }
+  handleCommentSubmit(comment) {
+    this.state.comments.push(comment);
+    const comments = this.state.comments;
+    const newComments = comments.concat([comment]);
+    this.setState((oldState, props) => {
+      return {
+        comments: newComments
+      };
+    });
+  }
 
   componentWillMount() {
     fetch(`http://localhost:3004/posts/${this.props.postId}/comments`)
@@ -33,7 +35,7 @@ class CommentBox extends Component {
     let comments = this.state.comments;
     return (
       <div className="comment__box">
-        <CommentForm/>
+        <CommentForm onSubmit={this.handleCommentSubmit}/>
         {comments.map(comment => <Comment data={comment}/>)}
       </div>
     );
