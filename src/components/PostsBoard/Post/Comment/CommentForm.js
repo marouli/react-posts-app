@@ -4,14 +4,14 @@ class CommentForm extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      newComment: {}
-    };
-
     this.handleSubmit = this.handleSubmit.bind(this);
+    this._getRandomAuthor = this._getRandomAuthor.bind(this);
   }
 
-  _getRandomAuthor(){}
+  _getRandomAuthor(){
+    let users = this.props.users;
+    return users[Math.floor(Math.random()*users.length)];
+  }
 
 
   handleSubmit(event) {
@@ -27,17 +27,17 @@ class CommentForm extends Component {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(jsonData)
     }).then(res => res.json())
-      .then(data => this.setState({ newComment: data }));
+      .then(data => this.props.onCommentSubmit(data));
   };
 
   render() {
-    const data = this.state.newComment;
+    let author = this._getRandomAuthor();
     return(
       <form name="commentForm" id="commentForm" className="comment__form" onSubmit={this.handleSubmit}>
-          <input type="text" placeholder="Comment here..." id="content" name="content"/>
-          <input type="hidden" id="postId" name="postId" value="1"/>
-          <input type="hidden" id="authorId" name="authorId" value="1"/>
-          <input type="hidden" id="date" name="date" value="now"/>
+        <input type="text" placeholder="Comment here..." id="content" name="content"/>
+        <input type="hidden" id="postId" name="postId" value={this.props.postId}/>
+        <input type="hidden" id="authorId" name="authorId" value={author.id}/>
+        <input type="hidden" id="date" name="date" value={new Date().getDate()}/>
         <button type="submit">Post Comment</button>
       </form>
     );
