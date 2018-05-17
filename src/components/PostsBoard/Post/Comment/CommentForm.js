@@ -13,7 +13,6 @@ class CommentForm extends Component {
     return users[Math.floor(Math.random()*users.length)];
   }
 
-
   handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);

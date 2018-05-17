@@ -39,9 +39,11 @@ class CommentBox extends Component {
             postId={this.props.postId}
             onCommentSubmit={this.handleCommentSubmit}
             users={users}/>
-        {comments.map(comment => <Comment
-                                    data={comment}
-                                    users={users}/>)}
+        {comments.map(comment =>
+          <Comment
+            data={comment}
+            users={users}
+          />)}
       </div>
     );
   }

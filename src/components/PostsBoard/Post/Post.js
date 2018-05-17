@@ -1,16 +1,13 @@
-import React, {Component} from 'react';
+import React from 'react';
 import CommentBox from './Comment/CommentBox';
 import './Post.css';
 
-class Post extends Component {
-  constructor(props) {
-    super(props);
-  }
+function Post(props) {
 
-  render() {
-    let data = this.props.data;
-    let users = this.props.users;
-    let author = users.filter(author => author.id == data.authorId)[0];
+    let data = props.data;
+    let users = props.users;
+    let author = users.filter(author => author.id === data.authorId)[0];
+
     return (
       <section className="post">
         <header className="post__header">
@@ -27,7 +24,6 @@ class Post extends Component {
         <CommentBox postId={data.id} users={users}/>
       </section>
     );
-  }
 }
 
 export default Post;

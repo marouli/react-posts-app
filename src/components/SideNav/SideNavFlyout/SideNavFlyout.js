@@ -24,6 +24,6 @@ function SideNavFlyout(props) {
       {props.children}
     </ul>
   );
-  }
+}
 
 export default SideNavFlyout;

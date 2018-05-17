@@ -14,10 +14,13 @@ class PostsBoard extends Component {
   componentDidMount() {
     fetch('http://localhost:3004/posts')
       .then(response => response.json())
-      .then(posts => fetch('http://localhost:3004/users')
-      .then(response => response.json())
-      .then(users => this.setState({ users: users ,
-                                      posts: posts})))
+      .then(posts =>
+        fetch('http://localhost:3004/users')
+          .then(response => response.json())
+          .then(users => this.setState({posts: posts,
+                                        users: users})
+          )
+      )
   }
 
   render() {
