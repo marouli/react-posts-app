@@ -1,4 +1,4 @@
-.searchInput__container{
+.search__container{
   margin-left: 20px;
   width: 300px;
   height: 20px;
@@ -7,7 +7,7 @@
   position: relative;
 }
 
-input.searchInput__input{
+.search__input{
   width: 300px;
   height: 40px;
   border: 1px solid #DDDDDD;
@@ -19,7 +19,7 @@ input.searchInput__input{
   border-radius: 5px;
 }
 
-span.search__icon{
+.search__icon{
   position: relative;
   /*vertical-align: center;*/
   top: 50%;

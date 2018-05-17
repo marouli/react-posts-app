@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import './User.css';
-
 import Icon from '../../common/Icon/Icon';
 
 class User extends Component {

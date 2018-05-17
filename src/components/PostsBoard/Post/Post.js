@@ -17,7 +17,7 @@ function Post(props) {
           <time className="post__date">{data.date}</time>
         </header>
         <main>
-          <img src='./img/bfeatures.png' className="post__content__img"></img>
+          <img src='./img/bfeatures.png' className="post__img"></img>
           <h5 className="post__title">{data.title}</h5>
           <p className="post__content">{data.content}</p>
         </main>

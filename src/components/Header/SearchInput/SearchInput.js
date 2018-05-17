@@ -21,9 +21,9 @@ class SearchInput extends Component {
   render() {
     return (
       <form>
-        <div className="searchInput__container">
+        <div className="search__container">
           <input
-            className="searchInput__input"
+            className="search__input"
             type="search"
             placeholder="Search..."
             value={this.state.filterText}

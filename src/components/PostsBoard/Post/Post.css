@@ -1,4 +1,4 @@
-section.post {
+.post {
   width: 80%;
   margin: auto;
   margin-top: 40px;
@@ -10,18 +10,18 @@ section.post {
   box-shadow: 1px 1px 3px #DDDDDD;
 }
 
-header.post__header {
+.post__header {
   border-bottom: 1px solid #BBBBBB;
   margin: 5px 25px;
 }
 
-span.author__avatar, h5.author__name, h6.author__jobTitle, time.post--date {
+.author__avatar, .author__name, .author__jobTitle, .post--date {
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
 }
 
-span.author__avatar {
+.author__avatar {
   height: 30px;
   width: 30px;
   background-color: #DDDDDD;
@@ -29,41 +29,25 @@ span.author__avatar {
   margin-left: 20px;
 }
 
-h6.author__jobTitle, time.post__date {
+.author__jobTitle, .post__date {
   color: #888888;
 }
 
-time.post__date {
+.post__date {
   font-size: 12px;
 }
 
-img.post__content__img {
+.post__img {
   width: 30%;
   display: inline-block;
   float: left;
 }
 
-h5.post__title {
+.post__title {
   margin-bottom: 10px;
 }
 
-p.post__content {
+.post__content {
   margin: 0 25px 10px 0;
   font-size: smaller;
-}
-
-form {
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-
-form input.post__comment {
-  margin-right: 10px;
-  padding-right: 50px;
-  color: #888888;
-  border-radius: 3px;
-}
-
-form input.submit__comment {
-  margin-right: 10px;
 }

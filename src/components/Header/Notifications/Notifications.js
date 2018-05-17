@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import './Notifications.css';
-
 import Icon from '../../common/Icon/Icon';
 
 class Notifications extends Component {
