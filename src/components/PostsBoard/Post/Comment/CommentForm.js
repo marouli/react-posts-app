@@ -33,7 +33,7 @@ class CommentForm extends Component {
   render() {
     let author = this._getRandomAuthor();
     return(
-      <form name="commentForm" id="commentForm" className="comment__form" onSubmit={this.handleSubmit}>
+      <form name="commentForm" id="commentForm" className="comment-form" onSubmit={this.handleSubmit}>
         <input type="text" placeholder="Comment here..." id="content" name="content"/>
         <input type="hidden" id="postId" name="postId" value={this.props.postId}/>
         <input type="hidden" id="authorId" name="authorId" value={author.id}/>

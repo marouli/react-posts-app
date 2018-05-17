@@ -9,17 +9,17 @@ function Post(props) {
     let author = users.filter(author => author.id === data.authorId)[0];
 
     return (
-      <section className="post">
-        <header className="post__header">
-          <span className="author__avatar" src={author.avatarUrl}></span>
-          <h5 className="author__name">{author.name}</h5>
-          <h6 className="author__jobTitle">{author.jobTitle} |</h6>
-          <time className="post__date">{data.date}</time>
+      <section className="c-post">
+        <header className="c-post__header">
+          <span className="c-post__avatar" src={author.avatarUrl}></span>
+          <h5 className="c-post__author-name">{author.name}</h5>
+          <h6 className="c-post__author-job">{author.jobTitle} |</h6>
+          <time className="c-post__date">{data.date}</time>
         </header>
         <main>
-          <img src='./img/bfeatures.png' className="post__img"></img>
-          <h5 className="post__title">{data.title}</h5>
-          <p className="post__content">{data.content}</p>
+          <img src='./img/bfeatures.png' className="c-post__img"></img>
+          <h5 className="c-post__title">{data.title}</h5>
+          <p className="c-post__content">{data.content}</p>
         </main>
         <CommentBox postId={data.id} users={users}/>
       </section>

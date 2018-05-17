@@ -1,4 +1,4 @@
-.post {
+.c-post {
   width: 80%;
   margin: auto;
   margin-top: 40px;
@@ -10,18 +10,18 @@
   box-shadow: 1px 1px 3px #DDDDDD;
 }
 
-.post__header {
+.c-post__header {
   border-bottom: 1px solid #BBBBBB;
   margin: 5px 25px;
 }
 
-.author__avatar, .author__name, .author__jobTitle, .post--date {
+.c-post__avatar, .c-post__author-name, .c-post__author-job, .c-post__date {
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
 }
 
-.author__avatar {
+.c-post__avatar {
   height: 30px;
   width: 30px;
   background-color: #DDDDDD;
@@ -29,25 +29,25 @@
   margin-left: 20px;
 }
 
-.author__jobTitle, .post__date {
+.c-post__author-job, .c-post__date {
   color: #888888;
 }
 
-.post__date {
+.c-post__date {
   font-size: 12px;
 }
 
-.post__img {
+.c-post__img {
   width: 30%;
   display: inline-block;
   float: left;
 }
 
-.post__title {
+.c-post__title {
   margin-bottom: 10px;
 }
 
-.post__content {
+.c-post__content {
   margin: 0 25px 10px 0;
   font-size: smaller;
 }

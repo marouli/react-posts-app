@@ -20,7 +20,7 @@ function SideNavFlyout(props) {
   return (
     <ul
       onClick={props.onClick}
-      className={`sideNavFlyout ${visibility}`}>
+      className={`nav-flyout ${visibility}`}>
       {props.children}
     </ul>
   );

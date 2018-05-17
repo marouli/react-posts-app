@@ -8,8 +8,8 @@ class App extends Component {
 
   render() {
     return (
-      <header className="header">
-        <div className="header__container--flex">
+      <header className="s-header">
+        <div className="container">
           <SearchInput/>
           <div>
             <Notifications/>

@@ -27,15 +27,13 @@ class PostsBoard extends Component {
     let posts = this.state.posts;
     let users = this.state.users;
     return (
-      <section className="posts__container--scrolling">
-        <div className="posts--scrolled">
+      <section className="s-posts">
           {posts.map(post =>
             <Post
               data={post}
               key={post.id}
               users={users}
             />)}
-        </div>
       </section>
     )
   }

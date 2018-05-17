@@ -20,19 +20,17 @@ class SearchInput extends Component {
 
   render() {
     return (
-      <form>
-        <div className="search__container">
-          <input
-            className="search__input"
-            type="search"
-            placeholder="Search..."
-            value={this.state.filterText}
-            onChange={this.handleChange}
-          />
-          <span className="search__icon">
-            <i className="fa fa-search"></i>
+      <form className="c-search">
+        <input
+          className="c-search__input"
+          type="search"
+          placeholder="Search..."
+          value={this.state.filterText}
+          onChange={this.handleChange}
+        />
+        <span className="c-search__icon">
+          <i className="fa fa-search"></i>
           </span>
-        </div>
       </form>
     )
   }

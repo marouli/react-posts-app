@@ -87,6 +87,13 @@
       "authorId": "1",
       "date": "17",
       "id": 5
+    },
+    {
+      "content": "ghfghd",
+      "postId": "2",
+      "authorId": "2",
+      "date": "17",
+      "id": 6
     }
   ]
 }

@@ -40,10 +40,10 @@ class SideNav extends Component {
 
   render() {
     return (
-      <nav className="sideNav">
+      <nav className="c-side-nav">
         <div>
-          <img src='./img/sk.png' className="sideNav__logo" alt="logo"/>
-          <ul className="sideNav__ul">
+          <img src='./img/sk.png' className="c-side-nav__logo" alt="logo"/>
+          <ul className="c-side-nav__ul">
             <li><a href="#">Activitystream</a></li>
             <li><a onClick={this.handleChannelsClick} href="#">Channels ></a>
               <SideNavFlyout

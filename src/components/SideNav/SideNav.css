@@ -1,32 +1,31 @@
-/*Research for CSS-in-JS*/
-.sideNav__ul,.sideNav__ul ul, .sideNav__ul ul li {
+.c-side-nav {
+  background-color: #cd2428;
+  height: 100%;
+}
+
+.c-side-nav__ul, .c-side-nav__ul li {
   margin:0;
   padding:0;
   list-style:none;
 }
 
-.sideNav {
-  background-color: #cd2428;
-  height: 100%;
-}
-
-ul.sideNav__ul {
+.c-side-nav__ul {
   margin-top: 20px;
 }
 
-.sideNav__logo {
+.c-side-nav__logo {
   width: 75%;
   margin: 30px;
 }
 
-.sideNav__ul li {
+.c-side-nav__ul li {
   position: relative;
   list-style: none;
   padding: 10px;
   min-height: 1px;
 }
 
-.sideNav__ul li a {
+.c-side-nav__ul li a {
   font-family: 'Roboto:700', sans-serif;
   padding:4px 15px;
   color: white;
@@ -34,25 +33,14 @@ ul.sideNav__ul {
   text-decoration: none;
 }
 
-.sideNav__ul li:hover {
+.c-side-nav__ul li:hover {
   background-color: #BB2428;
   position: relative;
   visibility: visible;
 }
 
-.sideNav__ul li:active {
+.c-side-nav__ul li:active {
   background-color: #FF6060;
   position: relative;
   visibility: visible;
 }
-
-/*.sideNav__ul ul li ul{*/
-  /*position:absolute;*/
-  /*display:block;*/
-  /*visibility:hidden;*/
-  /*height:100%;*/
-  /*background-color:transparent;*/
-  /*width:0;*/
-  /*color:#fff;*/
-
-/*}*/

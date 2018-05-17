@@ -34,7 +34,7 @@ class CommentBox extends Component {
     let comments = this.state.comments;
     let users = this.props.users;
     return (
-      <div className="comment__box">
+      <div className="c-comment-box">
         <CommentForm
             postId={this.props.postId}
             onCommentSubmit={this.handleCommentSubmit}

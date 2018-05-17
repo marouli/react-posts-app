@@ -1,4 +1,4 @@
-.header{
+.s-header {
   position: fixed;
   margin: auto;
   margin-left: 10px;
@@ -10,7 +10,7 @@
   z-index: 1;
 }
 
-.header__container--flex {
+.s-header .container {
   width: 100%;
   display: flex;
   flex-direction: row;

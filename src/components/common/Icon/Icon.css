@@ -1,4 +1,4 @@
-.icon__container {
+.c-icon__container {
   display: inline-block;
   margin: 10px;
   margin-top: 20px;
@@ -9,7 +9,7 @@
   box-shadow: 1px 1px 3px #DDDDDD;
 }
 
-.icon__icon{
+.c-icon__icon{
   padding: 0 2px 0 2px;
   color: #222222;
 }
