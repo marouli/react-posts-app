@@ -1,4 +1,5 @@
 import React from 'react';
+import './Comment.css';
 
 function Comment(props) {
 
@@ -8,8 +9,8 @@ function Comment(props) {
 
   return (
     <div className="comment">
-      {/*<span className="author__avatar" src={author.avatarUrl}></span>*/}
-      <h2 className="author__name">{author.name}</h2>
+      <span className="author__avatar" src={author.avatarUrl}></span>
+      <h5 className="author__name">{author.name}</h5>
       <p className="comment__content">{data.content}</p>
     </div>
   );

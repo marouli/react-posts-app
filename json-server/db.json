@@ -94,6 +94,13 @@
       "authorId": "2",
       "date": "17",
       "id": 6
+    },
+    {
+      "content": "hallo",
+      "postId": "1",
+      "authorId": "3",
+      "date": "17",
+      "id": 7
     }
   ]
 }
