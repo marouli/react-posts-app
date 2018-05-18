@@ -1,4 +1,19 @@
 .comment-form {
   margin-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
+}
+
+.c-comment-input {
+  margin-top: 10px;
+  width: 30%;
+  padding: 5px;
+}
+
+.c-comment-btn__container {
+  display: block;
+  margin-top: 10px;
+}
+
+.c-comment-sumbit-btn, c-comment-like-btn {
+  margin-right: 10px;
 }

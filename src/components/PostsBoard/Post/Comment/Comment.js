@@ -9,7 +9,7 @@ function Comment(props) {
 
   return (
     <div className="comment">
-      <span className="author__avatar" src={author.avatarUrl}></span>
+      <img className="author__avatar" src={author.avatarUrl}></img>
       <h5 className="author__name">{author.name}</h5>
       <p className="comment__content">{data.content}</p>
     </div>

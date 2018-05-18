@@ -28,28 +28,32 @@
       "authorId": 1,
       "title": "Colorfull shirts",
       "content": "Check out these gorgeous mofo's!",
-      "date": "28 February, 2018"
+      "date": "28 February, 2018",
+      "image": "https://media.platform.co.nl/media/documents/86/55/201703/1039f6d5be/shirts.gif.800x250_q85_crop.gif"
     },
     {
       "id": 2,
       "authorId": 2,
       "title": "Hey, why don't we use qollap more?",
       "content": "You know, for teamwork.Or just to share what this submarine captain learned about self-organizing teams:",
-      "date": "11 March, 2018"
+      "date": "11 March, 2018",
+      "image": "https://media.platform.co.nl/media/documents/86/55/201803/1483e5f51a/bfeatures_page_2.png.800x250_q85_crop.png"
     },
     {
       "id": 3,
       "authorId": 3,
       "title": "test",
       "content": "On 20 February 2018 from 00:00 hour until 21 February 2018 at 00:00 o’clock. Are you joining?",
-      "date": "20 February, 2018"
+      "date": "20 February, 2018",
+      "image": "https://media.platform.co.nl/media/documents/86/55/201802/dba65107cf/bgiphy.gif"
     },
     {
       "id": 4,
       "authorId": 1,
       "title": "Slack vs Whatsapp",
       "content": "Why don't cats meow in Paris? Because they chat!",
-      "date": "30 November, 2016"
+      "date": "30 November, 2016",
+      "image": "https://media.platform.co.nl/media/documents/86/240/201804/497a45e8d3/bgiphy.gif.800x250_q85_crop.gif"
     }
   ],
   "comments": [
@@ -101,6 +105,13 @@
       "authorId": "3",
       "date": "17",
       "id": 7
+    },
+    {
+      "content": "Feel free to join the group and initiatives where you either are involved, or have an interest in.",
+      "postId": "4",
+      "authorId": "3",
+      "date": "18",
+      "id": 8
     }
   ]
 }

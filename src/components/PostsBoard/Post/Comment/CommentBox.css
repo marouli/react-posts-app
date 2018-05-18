@@ -1,2 +1,12 @@
-.c-comment-box {
+.c-comment-list {
+  clear: both;
+}
+
+.c-comment-box__header {
+  float: left;
+  margin-left: 50px;
+  margin-bottom: 5px;
+  color: #BBBBBB;
+  font-size: 14px;
+  font-weight: 400;
 }
