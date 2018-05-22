@@ -19,6 +19,11 @@ class CommentForm extends Component {
     const formData = new FormData(event.target);
     let jsonData = {};
     for (const [key, value] of formData.entries()) {
+      // prevent empty comments to be added
+      if (jsonData.content === "") {
+        alert("Please write a comment first!");
+        return false;
+      }
       jsonData[key] = value;
     }
 
@@ -28,6 +33,8 @@ class CommentForm extends Component {
       body: JSON.stringify(jsonData)
     }).then(res => res.json())
       .then(data => this.props.onCommentSubmit(data));
+
+    event.target.reset();
   };
 
   render() {
@@ -39,10 +46,9 @@ class CommentForm extends Component {
         <input type="hidden" id="authorId" name="authorId" value={author.id}/>
         <input type="hidden" id="date" name="date" value={new Date().getDate()}/>
         <div className="c-comment-btn__container">
-          <button className="c-comment-sumbit-btn" type="submit">Post Comment</button>
-          <button className="c-comment-like-btn"type="submit">Like Comment</button>
+          <button className="c-comment-sumbit-btn" type="submit">Comment</button>
+          <button className="c-comment-like-btn"type="submit">Like</button>
         </div>
-
       </form>
     );
   }
