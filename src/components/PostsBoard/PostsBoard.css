@@ -1,10 +1,6 @@
 .s-posts {
-  width: 100%;
-  height: 100%;
-  /*background-color: #EAEAEA;*/
+  width: 70%;
   margin: 0 auto;
-  /*margin-top: 8%;*/
-  padding: 1px 0 1px 0;
   display: flex;
   flex-direction: column;
   flex: auto;
@@ -18,4 +14,8 @@
 /*width: 100%;*/
 /*}*/
 
-/*@media screen and (min-width: px) {}*/
+@media screen and (min-width: 750px) {
+  .s-posts {
+    width: auto;
+  }
+}

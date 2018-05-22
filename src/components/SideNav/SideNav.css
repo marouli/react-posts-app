@@ -1,9 +1,16 @@
 .c-side-nav {
-  background-color: #cd2428;
   height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #cd2428;
+  overflow-x: hidden;
 }
 
-.c-side-nav__ul, .c-side-nav__ul li {
+.c-side-nav__ul,
+.c-side-nav__ul li {
   margin:0;
   padding:0;
   list-style:none;
@@ -16,6 +23,19 @@
 .c-side-nav__logo {
   width: 75%;
   margin: 30px;
+}
+
+.c-side-nav-menu-icon {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background: #4C8FEC center;
+}
+
+.c-side-nav-menu-icon a:hover {
+  background-color: #444;
+  border-radius: 4px 4px 0 0;
+
 }
 
 .c-side-nav__ul li {

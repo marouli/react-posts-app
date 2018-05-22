@@ -5,10 +5,13 @@
   clear: both;
 }
 
-.author__name, .comment__content, .author__avatar {
+.author__name,
+.comment__content,
+.author__avatar {
   margin: 0;
 }
-.author__name, .author__avatar {
+.author__name,
+.author__avatar {
   display: inline-block;
   vertical-align: middle;
 }

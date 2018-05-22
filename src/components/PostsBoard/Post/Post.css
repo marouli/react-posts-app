@@ -10,7 +10,8 @@
   box-shadow: 2px 2px 3px #DDDDDD;
 }
 
-.c-post__header, .c-post__main {
+.c-post__header,
+.c-post__main {
   margin-right: 40px;
   margin-left: 40px;
 }
@@ -20,7 +21,10 @@
   margin-top: 20px;
 }
 
-.c-post__avatar, .c-post__author-name, .c-post__author-job, .c-post__date {
+.c-post__avatar,
+.c-post__author-name,
+.c-post__author-job,
+.c-post__date {
   display: inline-block;
   vertical-align: middle;
   margin: 5px;
@@ -37,7 +41,8 @@
   font-size: 16px;
 }
 
-.c-post__author-job, .c-post__date {
+.c-post__author-job,
+.c-post__date {
   font-size: 14px;
   color: #888888;
 }

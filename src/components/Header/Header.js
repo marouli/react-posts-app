@@ -9,12 +9,10 @@ class App extends Component {
   render() {
     return (
       <header className="s-header">
-        <div className="container">
-          <SearchInput/>
-          <div>
-            <Notifications/>
-            <User/>
-          </div>
+        <SearchInput/>
+        <div>
+          <Notifications/>
+          <User/>
         </div>
       </header>
     );
