@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <header className="s-header">
         <SearchInput/>
-        <div>
+        <div className="s-header-icons">
           <Notifications/>
           <User/>
         </div>

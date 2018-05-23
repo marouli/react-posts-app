@@ -10,25 +10,30 @@
 .author__avatar {
   margin: 0;
 }
-.author__name,
-.author__avatar {
+.author__name{
   display: inline-block;
   vertical-align: middle;
 }
 
-.author__name {}
-
 .comment__content{
+  overflow: hidden;
   padding-top: 5px;
   font-size: 14px;
   color: #888888;
+  line-height: 1.5;
 }
 
 .author__avatar {
-  /*display: inline-block;*/
+  display: none;
   float: left;
   height: 40px;
   border-radius: 3px;
   margin-left: 5px;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 750px) {
+  .author__avatar  {
+    display: inline-block;
+  }
 }

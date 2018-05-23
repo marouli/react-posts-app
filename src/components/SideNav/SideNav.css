@@ -1,12 +1,15 @@
 .c-side-nav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 2;
+  z-index: 201;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
   top: 0;
   left: 0;
+  width: 220px;
+  height: 100%;
   background-color: #cd2428;
-  overflow-x: hidden;
+  box-sizing: content-box;
 }
 
 .c-side-nav__ul,

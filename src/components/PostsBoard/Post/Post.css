@@ -8,6 +8,7 @@
   border: 1px solid #DDDDDD;
   border-radius: 2px;
   box-shadow: 2px 2px 3px #DDDDDD;
+  overflow: hidden;
 }
 
 .c-post__header,
@@ -31,6 +32,11 @@
   margin-bottom: 10px;
 }
 
+.c-post__avatar,
+.c-post__img {
+  display: none;
+}
+
 .c-post__avatar {
   height: 40px;
   border-radius: 3px;
@@ -47,15 +53,10 @@
   color: #888888;
 }
 
-/*.c-post__main {*/
-  /*height: 100%;*/
-/*}*/
-
 .c-post__img {
-  max-width: 20%;
-  height: auto;
+  height: 120px;
+  max-width: 220px;
   margin: 0 20px 10px 20px;
-  display: inline-block;
   float: left;
 }
 
@@ -67,4 +68,12 @@
 .c-post__content {
   margin-top: 0;
   font-size: smaller;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 750px) {
+  .c-post__avatar,
+  .c-post__img  {
+    display: inline-block;
+  }
 }

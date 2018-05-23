@@ -5,15 +5,20 @@
   justify-content: space-between;
   position: fixed;
   height: 80px;
-  width: 80%;
-  margin: auto;
+  width: calc(100% - 220px);
+  margin: 0 auto;
   background: #F9F9F9;
   border-bottom: 1px solid #BBBBBB;
-  z-index: 1;
+  flex-basis: auto;
+  z-index: 202;
 }
 
-@media screen and (min-width: 750px) {
-  .s-header .container {
-    width: auto;
-  }
+.s-header-icons {
+  margin-right: 20px;
 }
+
+/*@media screen and (min-width: 750px) {*/
+  /*.s-header .container {*/
+    /*width: auto;*/
+  /*}*/
+/*}*/
