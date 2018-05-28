@@ -4,9 +4,15 @@
 
 .c-comment-box__header {
   float: left;
-  margin-left: 50px;
+  margin-left: 30px;
   margin-bottom: 5px;
   color: #BBBBBB;
   font-size: 14px;
   font-weight: 400;
+}
+
+@media screen and (min-width: 769px) {
+  .c-comment-box__header {
+    margin-left: 50px;
+  }
 }

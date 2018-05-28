@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './Header.css';
 import SearchInput from "./SearchInput/SearchInput";
 import Notifications from "./Notifications/Notifications";
 import User from "./User/User";
 
-class App extends Component {
+class Header extends Component {
 
   render() {
     return (
@@ -19,4 +19,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Header;
