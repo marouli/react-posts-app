@@ -1,28 +1,61 @@
+.c-search,
+.c-search__input {
+  width: 150px;
+}
+
 .c-search {
-  margin: 20px;
-  margin-left: 30px;
-  width: 300px;
-  height: 20px;
-  vertical-align: middle;
-  white-space: nowrap;
   position: relative;
+  /*vertical-align: middle;*/
+  margin: 20px 5px 0 20px;
+  height: 20px;
+  white-space: nowrap;
 }
 
 .c-search__input {
   float: right;
-  width: 300px;
   height: 40px;
-  padding-left: 45px;
   border: 1px solid #DDDDDD;
+  padding-left: 45px;
   border-radius: 5px;
   font-size: 10pt;
 }
 
 .c-search__icon {
-  z-index: 1;
   position: relative;
+  z-index: 1;
   top: 50%;
   margin-top: 17px;
   margin-left: 17px;
   color: #222222;
+}
+
+@media screen and (min-width: 170px) {
+  .c-search,
+  .c-search__input {
+    width: 50px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 426px) {
+  .c-search,
+  .c-search__input {
+    width: 50px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  .c-search,
+  .c-search__input {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .c-search,
+  .c-search__input {
+    width: 250px;
+    margin-left: 30px;
+  }
 }

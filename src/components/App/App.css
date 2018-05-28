@@ -19,16 +19,23 @@ body {
   flex-direction: row;
 }
 
-.sidebar {
-  width: 220px;
-}
+/*.sidebar {*/
+  /*width: 220px;*/
+/*}*/
 
 .main {
   /*flex: 1;*/
   /*flex-grow: 2;*/
   overflow-y: auto;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  width: calc(100% - 200px);
+  display: inline-block;
+  width: 100%;
+}
+
+@media screen and (min-width: 426px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 200px);
+  }
 }

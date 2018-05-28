@@ -41,37 +41,35 @@ class SideNav extends Component {
   render() {
     return (
       <nav className="c-side-nav">
-        <div>
-          <img src='./img/sk.png' className="c-side-nav__logo" alt="logo"/>
-          <a href="#" className="c-side-nav-menu-icon">&#9776; MENU</a>
-          <ul className="c-side-nav__ul">
-            <li><a href="#">Activitystream</a></li>
-            <li><a onClick={this.handleChannelsClick} href="#">Channels ></a>
-              <SideNavFlyout
-                onClick={this.handleClick}
-                visibility={this.state.isChannelsFlyoutVisible}
-                children={[
-                  <li>Stamkracht</li>,
-                  <li>Qollap</li>,
-                  <li>Brandfighters</li>
-                ]}
-              />
-            </li>
-            <li><a href="#">Colleagues</a></li>
-            <li><a href="#">Q&A</a></li>
-            <li><a onClick={this.handlePortalClick} href="#">Portal ></a>
-              <SideNavFlyout
-                onClick={this.handleClick}
-                visibility={this.state.isPortalFlyoutVisible}
-                children={[
-                  <li>General</li>,
-                  <li>Administratie</li>,
-                  <li>Development</li>
-                ]}
-              />
-            </li>
-          </ul>
-        </div>
+        <a href="#" className="c-side-nav-menu-icon">&#9776; MENU</a>
+        <img src='./img/sk.png' className="c-side-nav__logo" alt="logo"/>
+        <ul className="c-side-nav__ul">
+          <li><a href="#">Activitystream</a></li>
+          <li><a onClick={this.handleChannelsClick} href="#">Channels</a>
+            <SideNavFlyout
+              onClick={this.handleClick}
+              visibility={this.state.isChannelsFlyoutVisible}
+              children={[
+                <li>Stamkracht</li>,
+                <li>Qollap</li>,
+                <li>Brandfighters</li>
+              ]}
+            />
+          </li>
+          <li><a href="#">Colleagues</a></li>
+          <li><a href="#">Q&A</a></li>
+          <li><a onClick={this.handlePortalClick} href="#">Portal</a>
+            <SideNavFlyout
+              onClick={this.handleClick}
+              visibility={this.state.isPortalFlyoutVisible}
+              children={[
+                <li>General</li>,
+                <li>Administratie</li>,
+                <li>Development</li>
+              ]}
+            />
+          </li>
+        </ul>
       </nav>
     );
   }

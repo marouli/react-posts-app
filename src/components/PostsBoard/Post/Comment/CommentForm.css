@@ -1,21 +1,51 @@
-.comment-form {
-  margin-top: 20px;
-  margin-bottom: 40px;
+.c-comment-form {
+  margin-top: 10px;
 }
 
 .c-comment-input {
   margin-top: 10px;
+  margin-left: 20px;
   width: 30%;
   padding: 5px;
 }
 
 .c-comment-btn__container {
-  display: block;
-  margin-top: 10px;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 .c-comment-sumbit-btn,
 .c-comment-like-btn {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
+@media screen and (min-width: 426px) {
+  .c-comment-input {
+    margin-left: 20px;
+    width: 70%;
+  }
+  .c-comment-btn__container {
+    margin-left: 18px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .c-comment-input {
+    margin-left: 30px;
+    width: 40%;
+  }
+  .c-comment-btn__container {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  .c-comment-input {
+    margin: 20px 5px 5px 0;
+    width: 30%;
+  }
+  .c-comment-btn__container {
+    margin-left: 5px;
+  }
+}

@@ -16,7 +16,7 @@
 }
 
 .nav-flyout.show {
-  z-index: 20;
+  z-index: 25;
   visibility: visible;
   transform: translate3d(0vw, 0, 0);
 }

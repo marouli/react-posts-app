@@ -1,10 +1,17 @@
 .s-posts {
-  /*width: 80%;*/
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   position: relative;/* need this to position inner content */
-  top: 100px;
+  top: 50px;
   overflow: hidden;
   flex: 1;
+}
+
+@media screen and (min-width: 426px) {
+  .s-posts {
+    width: 80%;
+    top: 100px;
+  }
 }

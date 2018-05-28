@@ -1,38 +1,24 @@
 .c-side-nav {
-  z-index: 201;
-  position: relative;
+  position: fixed;
+  z-index: 2;
   overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  top: 0;
-  left: 0;
-  width: 220px;
-  height: 100%;
+  height: 80px;
   background-color: #cd2428;
-  box-sizing: content-box;
-}
-
-.c-side-nav__ul,
-.c-side-nav__ul li {
-  margin:0;
-  padding:0;
-  list-style:none;
-}
-
-.c-side-nav__ul {
-  margin-top: 20px;
-}
-
-.c-side-nav__logo {
-  width: 75%;
-  margin: 30px;
+  transition: 0.5s;
 }
 
 .c-side-nav-menu-icon {
-  display: none;
-  width: 40px;
-  height: 40px;
-  background: #4C8FEC center;
+  display: inline-block;
+  width: 50px;
+  margin: 18px 0 0 25px;
+  padding: 3px;
+  border: 2px solid #FFFFFF;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .c-side-nav-menu-icon a:hover {
@@ -41,31 +27,75 @@
 
 }
 
-.c-side-nav__ul li {
-  position: relative;
-  list-style: none;
-  padding: 10px;
-  min-height: 1px;
+.c-side-nav__logo {
+  float: right;
+  width: 40%;
+  margin: 28px 25px 0 0;
+  cursor: pointer;
 }
 
-.c-side-nav__ul li a {
-  font-family: 'Roboto:700', sans-serif;
-  padding:4px 15px;
-  color: white;
-  display: inline-block;
-  text-decoration: none;
+.c-side-nav__ul {
+  display: none;
+  position: absolute;
 }
 
-.c-side-nav__ul li:hover {
-  background-color: #BB2428;
-  position: relative;
-  visibility: visible;
+@media screen and (min-width: 170px) {
+  .c-side-nav__logo {
+    width: 45%;
+    margin: 30px 25px 0 0;
+  }
 }
 
-.c-side-nav__ul li:active {
-  background-color: #FF6060;
-  position: relative;
-  visibility: visible;
-}
+@media screen and (min-width: 426px) {
+  .c-side-nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 100%;
+  }
 
-/*@media screen and (min-width: px) {}*/
+  .c-side-nav__logo {
+    width: 75%;
+    margin: 30px;
+  }
+
+  .c-side-nav-menu-icon {
+    display: none;
+  }
+
+  .c-side-nav__ul,
+  .c-side-nav__ul li {
+    list-style:none;
+  }
+
+  .c-side-nav__ul {
+    display: inline-block;
+    position: relative;
+    margin-top: 40px;
+    padding-left: 0;
+  }
+
+  .c-side-nav__ul li {
+    position: relative;
+    list-style: none;
+    padding: 10px;
+    min-height: 1px;
+  }
+
+  .c-side-nav__ul li a {
+    font-family: 'Roboto:700', sans-serif;
+    padding:4px 15px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .c-side-nav__ul li:hover {
+    background-color: #BB2428;
+  }
+
+  .c-side-nav__ul li:active {
+    background-color: #FF6060;
+  }
+}

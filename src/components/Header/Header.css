@@ -1,24 +1,33 @@
 .s-header {
   flex: auto;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  position: fixed;
+  position: relative;
   height: 80px;
-  width: calc(100% - 220px);
+  top: 80px;
+  width: 100%;
   margin: 0 auto;
   background: #F9F9F9;
-  border-bottom: 1px solid #BBBBBB;
-  flex-basis: auto;
-  z-index: 202;
 }
 
 .s-header-icons {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
-/*@media screen and (min-width: 750px) {*/
-  /*.s-header .container {*/
-    /*width: auto;*/
-  /*}*/
-/*}*/
+@media screen and (min-width: 426px) {
+  .s-header {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 220px);
+    border-bottom: 1px solid #BBBBBB;
+  }
+
+  .s-header-icons {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+
+}
