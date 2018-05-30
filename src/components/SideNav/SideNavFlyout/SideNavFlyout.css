@@ -6,7 +6,7 @@
   width: 150px;
   height: 50vh;
   padding: 10px 0 10px 10px;
-  background-color: #DA5B5E;
+  background-color: #FF6060;
   transition: transform .3s cubic-bezier(0, .52, 0, 1);
 }
 
@@ -28,8 +28,8 @@
 }
 
 .nav-flyout li:hover {
-  color: #BB2428;
-  background-color: #DA5B5E;
-  cursor: default;
+  color: #c0392b;
+  background-color: #FF6060;
+  cursor: pointer;
 }
 

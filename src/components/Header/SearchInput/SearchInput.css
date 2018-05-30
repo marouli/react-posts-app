@@ -37,6 +37,14 @@
   }
 }
 
+@media screen and (min-width: 275px) {
+  .c-search,
+  .c-search__input {
+    width: 140px;
+    margin-left: 20px;
+  }
+}
+
 @media screen and (min-width: 426px) {
   .c-search,
   .c-search__input {

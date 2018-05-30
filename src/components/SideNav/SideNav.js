@@ -9,13 +9,15 @@ class SideNav extends Component {
     this.state = {
       isChannelsFlyoutVisible: false,
       isPortalFlyoutVisible: false,
-      hover: false
+      menuClassName: ''
     };
 
     this.handleChannelsClick = this.handleChannelsClick.bind(this);
     this.handlePortalClick = this.handlePortalClick.bind(this);
     this.toggleChannelsFlyout = this.toggleChannelsFlyout.bind(this);
     this.togglePortaFlyout = this.togglePortaFlyout.bind(this);
+    this.openMenu = this.openMenu.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
   }
 
   toggleChannelsFlyout() {
@@ -38,38 +40,64 @@ class SideNav extends Component {
     this.togglePortaFlyout();
   }
 
+  openMenu() {
+    this.setState((oldState, props) => ({
+      menuClassName: 'open'
+    }));
+  }
+
+  closeMenu() {
+    this.setState((oldState, props) => ({
+      menuClassName: 'close'
+    }));
+  }
+
   render() {
+    let sideNavClassName = "c-side-nav";
+    let slideClassName = "c-side-nav__slide";
+    let btnClassName = "c-side-nav-closebtn";
+    if (this.state.menuClassName === 'open') {
+      sideNavClassName += "-open";
+      slideClassName += "-open";
+      btnClassName += "-open";
+    } else {
+      slideClassName += "-close";
+      btnClassName += "-close";
+    }
     return (
-      <nav className="c-side-nav">
-        <a href="#" className="c-side-nav-menu-icon">&#9776; MENU</a>
+      <nav className={sideNavClassName}>
+        <a href="#" className="c-side-nav-menu-icon" onClick={this.openMenu}>&#9776; MENU</a>
         <img src='./img/sk.png' className="c-side-nav__logo" alt="logo"/>
-        <ul className="c-side-nav__ul">
-          <li><a href="#">Activitystream</a></li>
-          <li><a onClick={this.handleChannelsClick} href="#">Channels</a>
-            <SideNavFlyout
-              onClick={this.handleClick}
-              visibility={this.state.isChannelsFlyoutVisible}
-              children={[
-                <li>Stamkracht</li>,
-                <li>Qollap</li>,
-                <li>Brandfighters</li>
-              ]}
-            />
-          </li>
-          <li><a href="#">Colleagues</a></li>
-          <li><a href="#">Q&A</a></li>
-          <li><a onClick={this.handlePortalClick} href="#">Portal</a>
-            <SideNavFlyout
-              onClick={this.handleClick}
-              visibility={this.state.isPortalFlyoutVisible}
-              children={[
-                <li>General</li>,
-                <li>Administratie</li>,
-                <li>Development</li>
-              ]}
-            />
-          </li>
-        </ul>
+        <div className={slideClassName}>
+          <a href="#" className={btnClassName} onClick={this.closeMenu}>&times;</a>
+          <ul className="c-side-nav__ul">
+            <li><a href="#">Activitystream</a></li>
+            <li><a onClick={this.handleChannelsClick} href="#">Channels</a>
+              <SideNavFlyout
+                onClick={this.handleClick}
+                visibility={this.state.isChannelsFlyoutVisible}
+                children={[
+                  <li>Stamkracht</li>,
+                  <li>Qollap</li>,
+                  <li>Brandfighters</li>
+                ]}
+              />
+            </li>
+            <li><a href="#">Colleagues</a></li>
+            <li><a href="#">Q&A</a></li>
+            <li><a onClick={this.handlePortalClick} href="#">Portal</a>
+              <SideNavFlyout
+                onClick={this.handleClick}
+                visibility={this.state.isPortalFlyoutVisible}
+                children={[
+                  <li>General</li>,
+                  <li>Administratie</li>,
+                  <li>Development</li>
+                ]}
+              />
+            </li>
+          </ul>
+        </div>
       </nav>
     );
   }
