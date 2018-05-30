@@ -1,9 +1,9 @@
 .nav-flyout {
   z-index: 20;
   position: absolute;
-  top: 0;
-  left: 120px;
-  width: 150px;
+  top: 10px;
+  left: 140px;
+  width: calc(100% - 50px);
   height: 50vh;
   padding: 10px 0 10px 10px;
   background-color: #FF6060;

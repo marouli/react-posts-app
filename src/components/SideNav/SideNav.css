@@ -47,7 +47,7 @@
   transition: left .3s;
 }
 
-.c-side-nav__slide-close {
+.c-side-nav__slide {
   left: -450px;
 }
 
@@ -61,7 +61,11 @@
   text-decoration: none;
 }
 
-.c-side-nav-closebtn-close {
+.c-side-nav-closebtn-open:hover {
+  color: #FF6060;
+}
+
+.c-side-nav-closebtn {
   display: none;
 }
 

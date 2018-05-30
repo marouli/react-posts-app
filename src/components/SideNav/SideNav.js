@@ -48,33 +48,26 @@ class SideNav extends Component {
 
   closeMenu() {
     this.setState((oldState, props) => ({
-      menuClassName: 'close'
+      menuClassName: ''
     }));
   }
 
   render() {
-    let sideNavClassName = "c-side-nav";
-    let slideClassName = "c-side-nav__slide";
-    let btnClassName = "c-side-nav-closebtn";
-    if (this.state.menuClassName === 'open') {
-      sideNavClassName += "-open";
-      slideClassName += "-open";
-      btnClassName += "-open";
-    } else {
-      slideClassName += "-close";
-      btnClassName += "-close";
-    }
+    let classOpen = "";
+    if (this.state.menuClassName === 'open')
+      classOpen += "-open";
+
     return (
-      <nav className={sideNavClassName}>
+      <nav className={`c-side-nav${classOpen}`}>
         <a href="#" className="c-side-nav-menu-icon" onClick={this.openMenu}>&#9776; MENU</a>
         <img src='./img/sk.png' className="c-side-nav__logo" alt="logo"/>
-        <div className={slideClassName}>
-          <a href="#" className={btnClassName} onClick={this.closeMenu}>&times;</a>
+        <div className={`c-side-nav__slide${classOpen}`}>
+          <a href="#" className={`c-side-nav-closebtn${classOpen}`} onClick={this.closeMenu}>&times;</a>
           <ul className="c-side-nav__ul">
             <li><a href="#">Activitystream</a></li>
             <li><a onClick={this.handleChannelsClick} href="#">Channels</a>
               <SideNavFlyout
-                onClick={this.handleClick}
+                // onClick={this.handleClick}
                 visibility={this.state.isChannelsFlyoutVisible}
                 children={[
                   <li>Stamkracht</li>,
