@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import SideNav from '../SideNav/SideNav';
+import MenuBoard from '../MenuBoard/MenuBoard';
 import Header from '../Header/Header';
 import PostsBoard from '../PostsBoard/PostsBoard';
 
@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <div className="sidebar">
-          <SideNav/>
+          <MenuBoard/>
         </div>
         <div className="main">
           <Header/>

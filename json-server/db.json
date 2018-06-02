@@ -120,5 +120,106 @@
       "date": "23",
       "id": 9
     }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "parentId": null,
+      "sortId": 1,
+      "label": "Activitystream",
+      "url": ""
+    },
+    {
+      "id": 2,
+      "parentId": null,
+      "sortId": 2,
+      "label": "Channels",
+      "url": ""
+
+    },
+    {
+      "id": 3,
+      "parentId": null,
+      "sortId": 3,
+      "label": "Colleagues",
+      "url": ""
+    },
+    {
+      "id": 4,
+      "parentId": null,
+      "sortId": 4,
+      "label": "Q&A",
+      "url": ""
+    },
+    {
+      "id": 5,
+      "parentId": null,
+      "sortId": 5,
+      "label": "Portal",
+      "url": ""
+    },
+    {
+      "id": 6,
+      "parentId": 2,
+      "sortId": 1,
+      "label": "Stamkracht",
+      "url": ""
+    },
+    {
+      "id": 7,
+      "parentId": 2,
+      "sortId": 2,
+      "label": "Qollap",
+      "url": ""
+    },
+    {
+      "id": 8,
+      "parentId": 2,
+      "sortId": 3,
+      "label": "Brandfighters",
+      "url": ""
+    },
+    {
+      "id": 9,
+      "parentId": 2,
+      "sortId": 4,
+      "label": "Coach360",
+      "url": ""
+    },
+    {
+      "id": 10,
+      "parentId": 2,
+      "sortId": 5,
+      "label": "Beebox",
+      "url": ""
+    },
+    {
+      "id": 11,
+      "parentId": 2,
+      "sortId": 6,
+      "label": "Sessions",
+      "url": ""
+    },
+    {
+      "id": 12,
+      "parentId": 5,
+      "sortId": 1,
+      "label": "General",
+      "url": ""
+    },
+    {
+      "id": 13,
+      "parentId": 5,
+      "sortId": 2,
+      "label": "Administratie",
+      "url": ""
+    },
+    {
+      "id": 14,
+      "parentId": 5,
+      "sortId": 3,
+      "label": "Development",
+      "url": ""
+    }
   ]
 }

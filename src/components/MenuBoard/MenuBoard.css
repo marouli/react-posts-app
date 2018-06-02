@@ -1,0 +1,14 @@
+.s-menu {
+  /*position: fixed;*/
+  /*z-index: 2;*/
+  /*overflow-x: initial;*/
+  /*height: 80px;*/
+  /*background-color: #c0392b;*/
+}
+
+.s-menu__logo {
+  /*float: right;*/
+  /*width: 40%;*/
+  /*margin: 28px 25px 0 0;*/
+  /*cursor: pointer;*/
+}

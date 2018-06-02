@@ -1,7 +1,7 @@
 .c-side-nav {
   position: fixed;
   z-index: 2;
-  overflow-x: hidden;
+  overflow-x: initial;
   height: 80px;
   background-color: #c0392b;
 }
@@ -45,10 +45,12 @@
   height: 100%;
   background-color: #c0392b;
   transition: left .3s;
+
 }
 
 .c-side-nav__slide {
   left: -450px;
+  /*transition: .2s;*/
 }
 
 .c-side-nav-closebtn-open {
@@ -96,10 +98,6 @@
   background-color: #FF6060;
 }
 
-/*.c-side-nav__ul li:active {*/
-  /*background-color: #FF6060;*/
-/*}*/
-
 @media screen and (min-width: 170px) {
   .c-side-nav__logo {
     width: 45%;
@@ -114,7 +112,7 @@
     flex-direction: column;
     width: 220px;
     height: 100%;
-    transition: .5s;
+    transition: .3s;
   }
 
   .c-side-nav__logo {
