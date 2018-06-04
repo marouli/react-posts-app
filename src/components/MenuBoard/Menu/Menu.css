@@ -1,0 +1,31 @@
+.c-menu-submenu {
+  position: absolute;
+  top: 0;
+  left: 130px;
+  width: calc(100% - 70px);
+  height: 200px;
+  padding: 10px 0 10px 10px;
+  background-color: #FF6060;
+  transition: transform .4s cubic-bezier(0, .52, 0, 1);
+}
+
+.c-menu-submenu--hide {
+  display: none;
+  transform: translate3d(-100vw, 0, 0);
+}
+
+.c-menu-submenu--show {
+  display: inline;
+  transform: translate3d(0vw, 0, 0);
+}
+
+.c-menu-submenu li {
+  padding: 8px 0 10px 0;
+  color: #fff;
+  list-style: none;
+}
+
+.c-menu-submenu li:hover {
+  color: #c0392b;
+  cursor: pointer;
+}
