@@ -7,16 +7,21 @@ class MenuBoard extends Component {
     super(props);
     this.state = {
       menus: [],
-      isVisible: false,
+      isVisible: false
     };
 
     this.toggleVisibility = this.toggleVisibility.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   toggleVisibility() {
     this.setState((oldState, props) => ({
       isVisible: !oldState.isVisible
     }));
+  }
+
+  handleClick() {
+    this.toggleVisibility();
   }
 
   componentDidMount() {
@@ -29,17 +34,19 @@ class MenuBoard extends Component {
   render() {
     let menus = this.state.menus;
     let parentMenus = menus.filter(menu => menu.parentId === null);
-    let visibility = this.toggleVisibility ? "--show" : "--hide";
+    let visibility = "hide";
+    if (this.state.isVisible)
+      visibility = "show";
+
     let nav =
-      <nav className="s-menu__nav" role="navigation">
-        <ul className="s-menu__ul">
+      <nav className={`s-menu__nav ${visibility}`} role="navigation">
+        <ul className={`s-menu__ul ${visibility}`}>
         {parentMenus.map(menu =>
           <li>
             <Menu
             key={menu.id}
             data={menu}
             menus={menus}
-            visibility={visibility}
             />
           </li>)}
         </ul>
@@ -47,8 +54,12 @@ class MenuBoard extends Component {
 
     return (
       <main className="s-menu">
+        <div className={`s-menu__slider ${visibility}`}>
+          <a href="#" className={`s-menu-closebtn ${visibility}`} onClick={this.handleClick}>&times;</a>
+          {nav}
+        </div>
         <header>
-          <a href="#" className="s-menu__menu-icon" onClick={this.toggleVisibility}>&#9776; MENU</a>
+          <a href="#" className="s-menu__hamburger-icon" onClick={this.handleClick}>&#9776; MENU</a>
           <img src='./img/sk.png' className="s-menu__logo" alt="logo"/>
         </header>
         {nav}
