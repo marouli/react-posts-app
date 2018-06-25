@@ -1,7 +1,13 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './SideNavFlyout.css';
 
-function SideNavFlyout(props) {
+class SideNavFlyout extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      menuList: []
+    }
+  }
   /*async componentDidMount() {
     const response = await fetch("/api/sidenav/items?category=Channels");
     const items = await response.json();
@@ -11,19 +17,17 @@ function SideNavFlyout(props) {
       items
     });
   }*/
-  // const channelsList = ['Stamkracht', 'Qollap', 'Brandfighters', 'Beebox', 'Dasboard'];
-  // const portalList = ['General', 'Administratie', 'Development & Productie', 'Service'];
-  // const channelsListItems = channelsList.map((item, i) => <li key={i}>{item}</li>);
-  // const portalListItems = portalList.map((item, i) => <li key={i}>{item}</li>);
 
-  const visibility = props.visibility ? "show" : "hide";
-  return (
-    <ul
-      onClick={props.onClick}
-      className={`nav-flyout ${visibility}`}>
-      {props.children}
-    </ul>
-  );
+  render() {
+    let visibility = this.props.visibility ? "show" : "hide";
+    return (
+      <ul
+        onClick={this.props.onClick}
+        className={`nav-flyout ${visibility}`}>
+        {this.props.children}
+      </ul>
+    );
+  }
 }
 
 export default SideNavFlyout;

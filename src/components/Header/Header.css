@@ -10,7 +10,7 @@
   background: #F9F9F9;
 }
 
-.s-header-icons {
+.header-icons {
   margin-right: 10px;
 }
 
@@ -23,7 +23,7 @@
     border-bottom: 1px solid #BBBBBB;
   }
 
-  .s-header-icons {
+  .header-icons {
     margin-right: 20px;
   }
 }

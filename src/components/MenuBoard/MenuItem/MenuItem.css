@@ -1,0 +1,41 @@
+.c-menu-submenu {
+  z-index: 2;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  padding: 10px 0 10px 10px;
+  background-color: #FF6060;
+  transition: transform .4s cubic-bezier(0, .52, 0, 1);
+}
+
+.c-menu-submenu.show {
+  visibility: visible;
+  transform: translate3d(0vw, 0, 0);
+}
+
+.c-menu-submenu.hide {
+  visibility: hidden;
+  transform: translate3d(-100vw, 0, 0);
+}
+
+.c-menu-submenu li {
+  padding: 8px 0 10px 0;
+  color: #fff;
+  list-style: none;
+}
+
+.c-menu-submenu li a:hover {
+  color: #c0392b;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 250px) {
+  .c-menu-submenu {
+    top: 0;
+    left: 120px;
+    width: calc(100% - 70px);
+    height: 100vh;
+  }
+}

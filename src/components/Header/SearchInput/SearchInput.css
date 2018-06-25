@@ -5,7 +5,6 @@
 
 .c-search {
   position: relative;
-  /*vertical-align: middle;*/
   margin: 20px 5px 0 20px;
   height: 20px;
   white-space: nowrap;
@@ -37,11 +36,17 @@
   }
 }
 
+@media screen and (min-width: 275px) {
+  .c-search,
+  .c-search__input {
+    width: 140px;
+  }
+}
+
 @media screen and (min-width: 426px) {
   .c-search,
   .c-search__input {
     width: 50px;
-    margin-left: 20px;
   }
 }
 

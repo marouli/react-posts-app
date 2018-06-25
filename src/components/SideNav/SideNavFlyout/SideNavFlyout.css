@@ -1,13 +1,12 @@
 .nav-flyout {
-  z-index: 20;
   position: absolute;
   top: 0;
-  left: 120px;
-  width: 150px;
-  height: 50vh;
+  left: 130px;
+  width: calc(100% - 70px);
+  height: 200px;
   padding: 10px 0 10px 10px;
-  background-color: #DA5B5E;
-  transition: transform .3s cubic-bezier(0, .52, 0, 1);
+  background-color: #FF6060;
+  transition: transform .4s cubic-bezier(0, .52, 0, 1);
 }
 
 .nav-flyout.hide {
@@ -16,7 +15,6 @@
 }
 
 .nav-flyout.show {
-  z-index: 25;
   visibility: visible;
   transform: translate3d(0vw, 0, 0);
 }
@@ -28,8 +26,7 @@
 }
 
 .nav-flyout li:hover {
-  color: #BB2428;
-  background-color: #DA5B5E;
-  cursor: default;
+  color: #c0392b;
+  cursor: pointer;
 }
 
