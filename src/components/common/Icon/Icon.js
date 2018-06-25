@@ -3,7 +3,7 @@ import './Icon.css';
 
 function Icon({ faClassName }) {
   return (
-    <div className="c-icon__container">
+    <div className="c-icon">
       <span className="c-icon__icon">
         <i className={`fa fa-${faClassName}`}></i>
       </span>

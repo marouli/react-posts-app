@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import CommentForm from './CommentForm';
-import Comment from "./Comment";
+import Comment from './Comment';
 import './CommentBox.css';
 
 

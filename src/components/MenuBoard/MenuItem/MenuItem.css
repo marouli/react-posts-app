@@ -1,8 +1,9 @@
 .c-menu-submenu {
+  z-index: 2;
   position: absolute;
-  top: 0;
-  left: 130px;
-  width: calc(100% - 70px);
+  top: 40px;
+  left: 0px;
+  width: 100%;
   height: 100vh;
   padding: 10px 0 10px 10px;
   background-color: #FF6060;
@@ -25,7 +26,16 @@
   list-style: none;
 }
 
-.c-menu-submenu li:hover {
+.c-menu-submenu li a:hover {
   color: #c0392b;
   cursor: pointer;
+}
+
+@media screen and (min-width: 250px) {
+  .c-menu-submenu {
+    top: 0;
+    left: 120px;
+    width: calc(100% - 70px);
+    height: 100vh;
+  }
 }

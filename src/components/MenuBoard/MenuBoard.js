@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './MenuBoard.css';
-import Menu from './Menu/Menu';
+import MenuItem from './MenuItem/MenuItem';
 
 class MenuBoard extends Component {
   constructor(props) {
@@ -42,13 +42,11 @@ class MenuBoard extends Component {
       <nav className={`s-menu__nav ${visibility}`} role="navigation">
         <ul className={`s-menu__ul ${visibility}`}>
         {parentMenus.map(menu =>
-          <li>
-            <Menu
+            <MenuItem
             key={menu.id}
             data={menu}
             menus={menus}
-            />
-          </li>)}
+            />)}
         </ul>
       </nav>
 

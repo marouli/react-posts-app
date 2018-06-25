@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './SideNav.css';
-import SideNavFlyout from "./SideNavFlyout/SideNavFlyout";
+import SideNavFlyout from './SideNavFlyout/SideNavFlyout';
 
 class SideNav extends Component {
   constructor(props) {
@@ -81,9 +81,9 @@ class SideNav extends Component {
   }
 
   render() {
-    let classOpen = "";
+    let classOpen = '';
     if (this.state.menuClassName === 'open')
-      classOpen += "-open";
+      classOpen += '-open';
 
     return (
       <nav className={`c-side-nav${classOpen}`}>

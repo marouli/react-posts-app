@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import './Menu.css';
+import './MenuItem.css';
 
-class Menu extends Component {
+class MenuItem extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -48,25 +48,24 @@ class Menu extends Component {
       submenu =
         <ul className={`c-menu-submenu ${visibility}`}>
         {childrenMenus.map(menu =>
-          <li>
-            <Menu
+            <MenuItem
               key={menu.id}
               data={menu}
               menus={menus}
-            />
-          </li>)}
+            />)}
         </ul>
       }
     return (
       <React.Fragment>
-        <a href="#"
-           onClick={this.handleClick}
-           onMouseEnter={this.handleHover}
-           onMouseLeave={this.handleLeave}>{this.props.data.label}</a>
-        {submenu}
+        <li onClick={this.handleClick}
+            onMouseEnter={this.handleHover}
+            onMouseLeave={this.handleLeave}>
+          <a href="#">{this.props.data.label}</a>
+          {submenu}
+        </li>
       </React.Fragment>
     );
   }
 }
 
-export default Menu;
+export default MenuItem;
