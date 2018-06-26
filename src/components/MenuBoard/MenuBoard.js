@@ -38,7 +38,7 @@ class MenuBoard extends Component {
     if (this.state.isVisible)
       visibility = "show";
 
-    let nav =
+    let menu =
       <nav className={`s-menu__nav ${visibility}`} role="navigation">
         <ul className={`s-menu__ul ${visibility}`}>
         {parentMenus.map(menu =>
@@ -54,13 +54,13 @@ class MenuBoard extends Component {
       <main className="s-menu">
         <div className={`s-menu__slider ${visibility}`}>
           <a href="#" className={`s-menu-closebtn ${visibility}`} onClick={this.handleClick}>&times;</a>
-          {nav}
+          {menu}
         </div>
         <header>
           <a href="#" className="s-menu__hamburger-icon" onClick={this.handleClick}>&#9776; MENU</a>
           <img src='./img/sk.png' className="s-menu__logo" alt="logo"/>
         </header>
-        {nav}
+        {menu}
       </main>
     )
   }

@@ -40,13 +40,13 @@ class CommentForm extends Component {
   render() {
     let author = this._getRandomAuthor();
     return(
-      <form className="c-comment-form" name="commentForm" id="commentForm" onSubmit={this.handleSubmit}>
+      <form className="c-comment-form" name="commentForm" id="commentForm" autoComplete="off" onSubmit={this.handleSubmit}>
         <input className="c-comment-input" type="text" placeholder="Write a comment..." id="content" name="content"/>
         <input type="hidden" id="postId" name="postId" value={this.props.postId}/>
         <input type="hidden" id="authorId" name="authorId" value={author.id}/>
         <input type="hidden" id="date" name="date" value={new Date().getDate()}/>
         <div className="c-comment-btn__container">
-          <button className="c-comment-sumbit-btn" type="submit">Comment</button>
+          <button className="c-comment-submit-btn" type="submit">Comment</button>
           <button className="c-comment-like-btn"type="submit">Like</button>
         </div>
       </form>
