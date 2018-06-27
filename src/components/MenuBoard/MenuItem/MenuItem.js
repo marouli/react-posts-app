@@ -39,6 +39,10 @@ class MenuItem extends Component {
   render() {
     let menus = this.props.menus;
     let childrenMenus = menus.filter(menu => menu.parentId === this.props.data.id);
+    childrenMenus.sort(function(menu1, menu2) {
+      // Ascending: sortId less first
+      return menu1.sortId - menu2.sortId;
+    });
     let visibility = "hide";
     if (this.state.isVisible)
       visibility = "show";

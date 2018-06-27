@@ -34,6 +34,10 @@ class MenuBoard extends Component {
   render() {
     let menus = this.state.menus;
     let parentMenus = menus.filter(menu => menu.parentId === null);
+    parentMenus.sort(function(menu1, menu2) {
+      // Ascending: sortId less first
+      return menu1.sortId - menu2.sortId;
+    });
     let visibility = "hide";
     if (this.state.isVisible)
       visibility = "show";
